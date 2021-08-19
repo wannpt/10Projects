@@ -1,0 +1,12 @@
+
+<div class="menu__title">
+    <h1>Select a app</h1>
+</div>
+<div class="__animation-slideup menu__container">
+  
+  <mat-grid-list cols="5" rowHeight="4:3" class="menu__grid">
+    <mat-grid-tile *ngFor="let option of options" colspan="1">
+      <a mat-raised-button color='accent' class="menu__option">{{ option.title }}</a>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
